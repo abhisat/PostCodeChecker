@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+
+  postcodechecker:
+    container_name: postcodechecker
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - '3000:3001'
+    environment:
+      - NODE_ENV=development
