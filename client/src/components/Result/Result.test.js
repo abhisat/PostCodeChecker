@@ -24,6 +24,7 @@ const shallowMountResult = (props = {}) => {
 };
 
 describe("<Results />", () => {
+
   it("Matches the snapshot", () => {
     const Result = shallowMountResult();
     expect(toJson(Result)).toMatchSnapshot();

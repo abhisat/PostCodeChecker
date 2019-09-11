@@ -1,6 +1,6 @@
 import React from "react";
 import { PostCodeChecker } from "./PostCodeChecker";
-import Enzyme, { mount, shallow } from 'enzyme';
+import Enzyme, { shallow, unmount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import EnzymeAdapter from 'enzyme-adapter-react-16';
 
@@ -29,32 +29,37 @@ const shallowMountPostCodeChecker = (props = {}) => {
 };
 
 describe("<PostCodeChecker />", () => {
+  let postCodeChecker;
+
+  beforeEach(() => {
+    postCodeChecker = shallowMountPostCodeChecker(props);
+  });
+
+  afterEach(() => {
+    postCodeChecker.unmount();
+  })
+
   it("Matches the snapshot", () => {
-    const PostCodeChecker = shallowMountPostCodeChecker(props);
     expect(toJson(PostCodeChecker)).toMatchSnapshot();
   });
 
   it('handles postcode input', () => {
-    const PostCodeChecker = shallowMountPostCodeChecker(props);
-    PostCodeChecker.find('#postCode').simulate('change');
+    postCodeChecker.find('#postCode').simulate('change');
     expect(handlePostCodeChange.mock.calls.length).toBe(1);
   });
 
   it('handles suburb input', () => {
-    const PostCodeChecker = shallowMountPostCodeChecker(props);
-    PostCodeChecker.find('#suburb').simulate('change');
+    postCodeChecker.find('#suburb').simulate('change');
     expect(handleSuburbChange.mock.calls.length).toBe(1);
   });
 
   it('handles state input', () => {
-    const PostCodeChecker = shallowMountPostCodeChecker(props);
-    PostCodeChecker.find('#region').simulate('change');
+    postCodeChecker.find('#region').simulate('change');
     expect(handleRegionChange.mock.calls.length).toBe(1);
   });
 
   it('handles submit', () => {
-    const PostCodeChecker = shallowMountPostCodeChecker(props);
-    PostCodeChecker.find('form').simulate('submit',);
+    postCodeChecker.find('form').simulate('submit',);
     expect(handleSubmit.mock.calls.length).toBe(1);
   });
 });
