@@ -2,7 +2,8 @@
     "scripts": {
         "start": "cd client && node scripts/start.js",
         "build": "docker build -t postcodechecker .",
-        "dev": "docker-compose up"
+        "dev": "docker-compose up",
+        "test": "cd client && yarn test"
     },
     "name": "postcodechecker",
     "version": "1.0.0",
