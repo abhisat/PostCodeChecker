@@ -62,6 +62,7 @@ Step 3: Run
 yarn install
 ```
 Step 4: Add the .env file attached in the email inside the client folder.
+(Please rename the file to .env if the dot has disappeared due to the email.)
 
 Step 5: Run
 
