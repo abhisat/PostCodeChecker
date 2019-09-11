@@ -85,13 +85,13 @@ class App extends Component {
   }
 
   onSubmitValidate(postCode, suburb, region) {
-    if(postCode.length != 4){
+    if(postCode.length !== 4){
       return "Please enter a valid post code.";
     }
-    if(suburb.length == 0){
+    if(suburb.length === 0){
       return "Please enter a valid suburb name.";
     }
-    if(region.length == 0){
+    if(region.length === 0){
       return "Please enter the state.";
     }
     return true;

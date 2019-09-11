@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import styles from './style.module.css';
 import { Typography } from '@material-ui/core';
 
