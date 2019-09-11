@@ -43,7 +43,6 @@ class App extends Component {
   handleSuburbChange (e) {
     let suburbRegEx =  /^[a-zA-Z\s]*$/; 
     const suburb = e.target.value;
-    console.log(suburbRegEx.test(suburb))
     if(suburbRegEx.test(suburb)){
       this.setState(() => {
         return {suburb: suburb};
@@ -90,7 +89,7 @@ class App extends Component {
       return "Please enter a valid post code.";
     }
     if(suburb.length == 0){
-      return "Please enter a the suburb.";
+      return "Please enter a valid suburb name.";
     }
     if(region.length == 0){
       return "Please enter the state.";
@@ -126,7 +125,6 @@ class App extends Component {
   handleResponse (res) {
     const { postCode, suburb, region } = this.state;
     let response = JSON.parse(res);
-    console.log(response)
     this.suburbsList = [];
     this.regionList = [];
     if(response.error){

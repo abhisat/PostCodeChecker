@@ -23,38 +23,38 @@ const props = {
   onSubmit: handleSubmit
 }
 
-const mountPostCodeChecker = (props = {}) => {
+const shallowMountPostCodeChecker = (props = {}) => {
     const wrapper = shallow(<PostCodeChecker {...props} />);
     return wrapper;
 };
 
 describe("<PostCodeChecker />", () => {
   it("Matches the snapshot", () => {
-    const PostCodeChecker = mountPostCodeChecker(props);
+    const PostCodeChecker = shallowMountPostCodeChecker(props);
     expect(toJson(PostCodeChecker)).toMatchSnapshot();
   });
 
   it('handles postcode input', () => {
-    const PostCodeChecker = mountPostCodeChecker(props);
+    const PostCodeChecker = shallowMountPostCodeChecker(props);
     PostCodeChecker.find('#postCode').simulate('change');
     expect(handlePostCodeChange.mock.calls.length).toBe(1);
   });
 
   it('handles suburb input', () => {
-    const PostCodeChecker = mountPostCodeChecker(props);
+    const PostCodeChecker = shallowMountPostCodeChecker(props);
     PostCodeChecker.find('#suburb').simulate('change');
     expect(handleSuburbChange.mock.calls.length).toBe(1);
   });
 
   it('handles state input', () => {
-    const PostCodeChecker = mountPostCodeChecker(props);
+    const PostCodeChecker = shallowMountPostCodeChecker(props);
     PostCodeChecker.find('#region').simulate('change');
     expect(handleRegionChange.mock.calls.length).toBe(1);
   });
 
   it('handles submit', () => {
-    const PostCodeChecker = mountPostCodeChecker(props);
-    PostCodeChecker.find('form').simulate('submit');
+    const PostCodeChecker = shallowMountPostCodeChecker(props);
+    PostCodeChecker.find('form').simulate('submit',);
     expect(handleSubmit.mock.calls.length).toBe(1);
   });
 });
