@@ -8,6 +8,16 @@ Enzyme.configure({
   adapter: new EnzymeAdapter(),
 });
 
+const errorProps = {
+  error: true,
+  resultText: 'This is an error test.'
+}
+
+const resultProps = {
+  error: false,
+  resultText: 'This is a result test.'
+}
+
 const mountResult = (props = {}) => {
     const wrapper = mount(<Result {...props} />);
     return wrapper;
@@ -18,4 +28,17 @@ describe("<Results />", () => {
     const Result = mountResult();
     expect(toJson(Result)).toMatchSnapshot();
   });
+
+  it('displays errors in red', () => {
+    const Result = mountResult(errorProps);
+    expect(Result.find('p.error')).toHaveLength(1);
+    expect(Result.find('p.error').text()).toEqual('This is an error test.');
+  });
+
+  it('displays results in blue', () => {
+    const Result = mountResult(resultProps);
+    expect(Result.find('p.result')).toHaveLength(1);
+    expect(Result.find('p.result').text()).toEqual('This is a result test.');
+    console.log(Result.debug())
+  })
 });
