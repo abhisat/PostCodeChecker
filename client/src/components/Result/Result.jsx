@@ -5,8 +5,7 @@ import { Typography } from '@material-ui/core';
 
 const Result = (props) => {
     const { error, resultText } = props;
-    console.log(props)
-
+    
     return (
         <div className={resultText ? styles.message : styles.noshow}>
             <Typography className={styles.header}>

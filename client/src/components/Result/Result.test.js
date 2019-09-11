@@ -39,6 +39,5 @@ describe("<Results />", () => {
     const Result = mountResult(resultProps);
     expect(Result.find('p.result')).toHaveLength(1);
     expect(Result.find('p.result').text()).toEqual('This is a result test.');
-    console.log(Result.debug())
   })
 });

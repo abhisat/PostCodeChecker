@@ -23,12 +23,12 @@ const PostCodeChecker = (props) => {
   return (
     <div className={styles.formContainer}>
       <form onSubmit={onSubmit}>
-        <FormControl className={styles.form} onSubmit={onSubmit}>
+        <FormControl className={styles.form}>
           <Typography className={styles.formHeader}>
             Find a Post Code
           </Typography>
           <TextField
-            id="standard-name"
+            id="postCode"
             label="Post Code"
             className={styles.textField}
             value={postCode}
@@ -38,7 +38,7 @@ const PostCodeChecker = (props) => {
           />
 
           <TextField
-            id="standard-name"
+            id="suburb"
             label="Suburb"
             className={styles.textField}
             value={suburb}
@@ -50,6 +50,7 @@ const PostCodeChecker = (props) => {
             value={region}
             onChange={onRegionChange}
             className={styles.dropDown}
+            id="region"
             displayEmpty
           >
             <MenuItem value="" disabled>
@@ -68,6 +69,7 @@ const PostCodeChecker = (props) => {
             className={styles.button}
             type="submit"
             value="Submit"
+            id="submit"
           > 
             Check Address
           </Button>

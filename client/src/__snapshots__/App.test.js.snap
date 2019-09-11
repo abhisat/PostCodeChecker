@@ -19,7 +19,6 @@ exports[`<App/> Matches the snapshot 1`] = `
       >
         <WithStyles(ForwardRef(FormControl))
           className="form"
-          onSubmit={[Function]}
         >
           <ForwardRef(FormControl)
             className="form"
@@ -31,11 +30,9 @@ exports[`<App/> Matches the snapshot 1`] = `
                 "root": "MuiFormControl-root",
               }
             }
-            onSubmit={[Function]}
           >
             <div
               className="MuiFormControl-root form"
-              onSubmit={[Function]}
             >
               <WithStyles(ForwardRef(Typography))
                 className="formHeader"
@@ -86,7 +83,7 @@ exports[`<App/> Matches the snapshot 1`] = `
               </WithStyles(ForwardRef(Typography))>
               <WithStyles(ForwardRef(TextField))
                 className="textField"
-                id="standard-name"
+                id="postCode"
                 label="Post Code"
                 margin="normal"
                 onChange={[Function]}
@@ -100,7 +97,7 @@ exports[`<App/> Matches the snapshot 1`] = `
                       "root": "MuiTextField-root",
                     }
                   }
-                  id="standard-name"
+                  id="postCode"
                   label="Post Code"
                   margin="normal"
                   onChange={[Function]}
@@ -131,7 +128,7 @@ exports[`<App/> Matches the snapshot 1`] = `
                         className="MuiFormControl-root MuiTextField-root textField MuiFormControl-marginNormal"
                       >
                         <WithStyles(ForwardRef(InputLabel))
-                          htmlFor="standard-name"
+                          htmlFor="postCode"
                         >
                           <ForwardRef(InputLabel)
                             classes={
@@ -150,7 +147,7 @@ exports[`<App/> Matches the snapshot 1`] = `
                                 "shrink": "MuiInputLabel-shrink",
                               }
                             }
-                            htmlFor="standard-name"
+                            htmlFor="postCode"
                           >
                             <WithStyles(ForwardRef(FormLabel))
                               className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -164,7 +161,7 @@ exports[`<App/> Matches the snapshot 1`] = `
                                 }
                               }
                               data-shrink={false}
-                              htmlFor="standard-name"
+                              htmlFor="postCode"
                             >
                               <ForwardRef(FormLabel)
                                 className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -180,12 +177,12 @@ exports[`<App/> Matches the snapshot 1`] = `
                                   }
                                 }
                                 data-shrink={false}
-                                htmlFor="standard-name"
+                                htmlFor="postCode"
                               >
                                 <label
                                   className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
                                   data-shrink={false}
-                                  htmlFor="standard-name"
+                                  htmlFor="postCode"
                                 >
                                   Post Code
                                 </label>
@@ -194,7 +191,7 @@ exports[`<App/> Matches the snapshot 1`] = `
                           </ForwardRef(InputLabel)>
                         </WithStyles(ForwardRef(InputLabel))>
                         <WithStyles(ForwardRef(Input))
-                          id="standard-name"
+                          id="postCode"
                           onChange={[Function]}
                           type="text"
                           value=""
@@ -216,7 +213,7 @@ exports[`<App/> Matches the snapshot 1`] = `
                                 "underline": "MuiInput-underline",
                               }
                             }
-                            id="standard-name"
+                            id="postCode"
                             onChange={[Function]}
                             type="text"
                             value=""
@@ -239,7 +236,7 @@ exports[`<App/> Matches the snapshot 1`] = `
                                 }
                               }
                               fullWidth={false}
-                              id="standard-name"
+                              id="postCode"
                               inputComponent="input"
                               multiline={false}
                               onChange={[Function]}
@@ -270,7 +267,7 @@ exports[`<App/> Matches the snapshot 1`] = `
                                   }
                                 }
                                 fullWidth={false}
-                                id="standard-name"
+                                id="postCode"
                                 inputComponent="input"
                                 multiline={false}
                                 onChange={[Function]}
@@ -285,7 +282,7 @@ exports[`<App/> Matches the snapshot 1`] = `
                                     aria-invalid={false}
                                     className="MuiInputBase-input MuiInput-input"
                                     disabled={false}
-                                    id="standard-name"
+                                    id="postCode"
                                     onBlur={[Function]}
                                     onChange={[Function]}
                                     onFocus={[Function]}
@@ -305,7 +302,7 @@ exports[`<App/> Matches the snapshot 1`] = `
               </WithStyles(ForwardRef(TextField))>
               <WithStyles(ForwardRef(TextField))
                 className="textField"
-                id="standard-name"
+                id="suburb"
                 label="Suburb"
                 margin="normal"
                 onChange={[Function]}
@@ -319,7 +316,7 @@ exports[`<App/> Matches the snapshot 1`] = `
                       "root": "MuiTextField-root",
                     }
                   }
-                  id="standard-name"
+                  id="suburb"
                   label="Suburb"
                   margin="normal"
                   onChange={[Function]}
@@ -350,7 +347,7 @@ exports[`<App/> Matches the snapshot 1`] = `
                         className="MuiFormControl-root MuiTextField-root textField MuiFormControl-marginNormal"
                       >
                         <WithStyles(ForwardRef(InputLabel))
-                          htmlFor="standard-name"
+                          htmlFor="suburb"
                         >
                           <ForwardRef(InputLabel)
                             classes={
@@ -369,7 +366,7 @@ exports[`<App/> Matches the snapshot 1`] = `
                                 "shrink": "MuiInputLabel-shrink",
                               }
                             }
-                            htmlFor="standard-name"
+                            htmlFor="suburb"
                           >
                             <WithStyles(ForwardRef(FormLabel))
                               className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -383,7 +380,7 @@ exports[`<App/> Matches the snapshot 1`] = `
                                 }
                               }
                               data-shrink={false}
-                              htmlFor="standard-name"
+                              htmlFor="suburb"
                             >
                               <ForwardRef(FormLabel)
                                 className="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
@@ -399,12 +396,12 @@ exports[`<App/> Matches the snapshot 1`] = `
                                   }
                                 }
                                 data-shrink={false}
-                                htmlFor="standard-name"
+                                htmlFor="suburb"
                               >
                                 <label
                                   className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
                                   data-shrink={false}
-                                  htmlFor="standard-name"
+                                  htmlFor="suburb"
                                 >
                                   Suburb
                                 </label>
@@ -413,7 +410,7 @@ exports[`<App/> Matches the snapshot 1`] = `
                           </ForwardRef(InputLabel)>
                         </WithStyles(ForwardRef(InputLabel))>
                         <WithStyles(ForwardRef(Input))
-                          id="standard-name"
+                          id="suburb"
                           onChange={[Function]}
                           type="text"
                           value=""
@@ -435,7 +432,7 @@ exports[`<App/> Matches the snapshot 1`] = `
                                 "underline": "MuiInput-underline",
                               }
                             }
-                            id="standard-name"
+                            id="suburb"
                             onChange={[Function]}
                             type="text"
                             value=""
@@ -458,7 +455,7 @@ exports[`<App/> Matches the snapshot 1`] = `
                                 }
                               }
                               fullWidth={false}
-                              id="standard-name"
+                              id="suburb"
                               inputComponent="input"
                               multiline={false}
                               onChange={[Function]}
@@ -489,7 +486,7 @@ exports[`<App/> Matches the snapshot 1`] = `
                                   }
                                 }
                                 fullWidth={false}
-                                id="standard-name"
+                                id="suburb"
                                 inputComponent="input"
                                 multiline={false}
                                 onChange={[Function]}
@@ -504,7 +501,7 @@ exports[`<App/> Matches the snapshot 1`] = `
                                     aria-invalid={false}
                                     className="MuiInputBase-input MuiInput-input"
                                     disabled={false}
-                                    id="standard-name"
+                                    id="suburb"
                                     onBlur={[Function]}
                                     onChange={[Function]}
                                     onFocus={[Function]}
@@ -525,6 +522,7 @@ exports[`<App/> Matches the snapshot 1`] = `
               <WithStyles(ForwardRef(Select))
                 className="dropDown"
                 displayEmpty={true}
+                id="region"
                 onChange={[Function]}
                 value=""
               >
@@ -542,11 +540,13 @@ exports[`<App/> Matches the snapshot 1`] = `
                     }
                   }
                   displayEmpty={true}
+                  id="region"
                   onChange={[Function]}
                   value=""
                 >
                   <WithStyles(ForwardRef(Input))
                     className="dropDown"
+                    id="region"
                     inputComponent={
                       Object {
                         "$$typeof": Symbol(react.forward_ref),
@@ -677,6 +677,7 @@ exports[`<App/> Matches the snapshot 1`] = `
                           "underline": "MuiInput-underline",
                         }
                       }
+                      id="region"
                       inputComponent={
                         Object {
                           "$$typeof": Symbol(react.forward_ref),
@@ -808,6 +809,7 @@ exports[`<App/> Matches the snapshot 1`] = `
                           }
                         }
                         fullWidth={false}
+                        id="region"
                         inputComponent={
                           Object {
                             "$$typeof": Symbol(react.forward_ref),
@@ -947,6 +949,7 @@ exports[`<App/> Matches the snapshot 1`] = `
                             }
                           }
                           fullWidth={false}
+                          id="region"
                           inputComponent={
                             Object {
                               "$$typeof": Symbol(react.forward_ref),
@@ -1094,6 +1097,7 @@ exports[`<App/> Matches the snapshot 1`] = `
                               }
                               disabled={false}
                               displayEmpty={true}
+                              id="region"
                               inputRef={[Function]}
                               multiple={false}
                               onBlur={[Function]}
@@ -1118,6 +1122,7 @@ exports[`<App/> Matches the snapshot 1`] = `
                                 </em>
                               </div>
                               <input
+                                id="region"
                                 type="hidden"
                                 value=""
                               />
@@ -1338,6 +1343,7 @@ exports[`<App/> Matches the snapshot 1`] = `
               <WithStyles(ForwardRef(Button))
                 className="button"
                 color="primary"
+                id="submit"
                 type="submit"
                 value="Submit"
                 variant="contained"
@@ -1366,6 +1372,7 @@ exports[`<App/> Matches the snapshot 1`] = `
                     }
                   }
                   color="primary"
+                  id="submit"
                   type="submit"
                   value="Submit"
                   variant="contained"
@@ -1376,6 +1383,7 @@ exports[`<App/> Matches the snapshot 1`] = `
                     disabled={false}
                     focusRipple={true}
                     focusVisibleClassName="Mui-focusVisible"
+                    id="submit"
                     type="submit"
                     value="Submit"
                   >
@@ -1392,12 +1400,14 @@ exports[`<App/> Matches the snapshot 1`] = `
                       disabled={false}
                       focusRipple={true}
                       focusVisibleClassName="Mui-focusVisible"
+                      id="submit"
                       type="submit"
                       value="Submit"
                     >
                       <button
                         className="MuiButtonBase-root MuiButton-root button MuiButton-contained MuiButton-containedPrimary"
                         disabled={false}
+                        id="submit"
                         onBlur={[Function]}
                         onDragLeave={[Function]}
                         onFocus={[Function]}
