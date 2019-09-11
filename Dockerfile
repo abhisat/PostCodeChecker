@@ -8,7 +8,7 @@ WORKDIR /client
 ENV PATH /client/node_modules/.bin:$PATH
 
 # install and cache app dependencies
-COPY /client/package.json /client/package.json
+COPY . /
 
 RUN yarn install && yarn add react-scripts -g
 

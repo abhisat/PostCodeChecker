@@ -1,0 +1,28 @@
+.message {
+    width: 80%;
+    height: 10%;
+    margin: 0 auto !important;
+    margin-top: 10px !important;
+    text-align: center;
+    display: block;
+}
+
+.noshow {
+    display: none;
+}
+
+.header{
+    font-size: 1.5rem !important;
+}
+
+.error {
+    color: red;
+    background-color: rgb(241, 198, 198, 0.4);
+    border: 0.5px solid red;
+}
+
+.result{
+    color: #0075bf;
+    background-color: #c6ddeb;
+    border: 0.5px solid #0075bf;
+}

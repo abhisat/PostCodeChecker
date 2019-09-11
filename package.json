@@ -1,0 +1,13 @@
+{
+    "scripts": {
+        "start": "cd client && node scripts/start.js",
+        "build": "docker build -t postcodechecker .",
+        "dev": "docker-compose up"
+    },
+    "name": "postcodechecker",
+    "version": "1.0.0",
+    "description": "Post code checker app",
+    "main": "index.js",
+    "author": "Abhishek Satpathy",
+    "license": "MIT"
+}

@@ -8,9 +8,9 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - '.:/app'
-      - '/app/node_modules'
+      - '.:/client'
+      - '/client/node_modules'
     ports:
-      - '3000:3001'
+      - '3001:3000'
     environment:
       - NODE_ENV=development
