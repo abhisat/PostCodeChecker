@@ -1,0 +1,10 @@
+{
+  "name": "cors-server",
+  "version": "1.0.0",
+  "description": "Cross Origin Resource Sharing Server for Development on localhost.",
+  "main": "corse-server.js",
+  "license": "MIT",
+  "dependencies": {
+    "cors-anywhere": "^0.4.1"
+  }
+}

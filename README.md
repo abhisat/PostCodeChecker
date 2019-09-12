@@ -10,36 +10,6 @@ After cloning the repository with:
 git clone https://github.com/abhisat/PostCodeChecker.git
 ```
 
-### With Docker:
-
-Step 1: Install Docker
-
-Link to install Docker: https://docs.docker.com/docker-for-mac/install/
-
-Step 2: Install Yarn
-
-```bash
-brew install yarn
-```
-
-Step 3: Add the .env file attached in the email inside the client folder.
-(Please rename the file to .env if the dot has disappeared due to the email.)
-
-Step 4: Build
-
-```bash
-yarn build
-```
-
-Step 4: Run
-
-```bash
-yarn dev
-```
-
-Step 5: The app should be accessible on 0.0.0.0:3001
-
-
 ### With Web-pack Dev-Server:
 
 Step 1: Install Yarn
@@ -48,24 +18,25 @@ Step 1: Install Yarn
 brew install yarn
 ```
 
-Step 2: cd into client dir
-
-```bash
-cd client
-```
-Step 3: Run
+Step 2: Run the install command from the root dir
 
 ```bash
 yarn install
 ```
-Step 4: Add the .env file attached in the email inside the client folder.
+
+Step 3: Add the .env file attached in the email inside the client folder.
 (Please rename the file to .env if the dot has disappeared due to the email.)
 
-Step 5: Run
+Step 4: Run the cors and webpack dev server commands from different terminals in the root
+
+```bash
+yarn cors
+```
 
 ```bash
 yarn start
 ```
+
 Step: 6: The app should be accessible on localhost:3000
 
 The app should be accessible on localhost:3000

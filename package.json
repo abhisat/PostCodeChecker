@@ -1,5 +1,7 @@
 {
     "scripts": {
+        "install": "cd client && yarn install && cd ../cors-server && yarn install",
+        "cors": "cd cors-server && node cors-server.js",
         "start": "cd client && node scripts/start.js",
         "build": "docker build -t postcodechecker .",
         "dev": "docker-compose up",
