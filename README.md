@@ -37,11 +37,8 @@ Step 4: Run
 yarn dev
 ```
 
-Step 5: Open chrome in CORS mode:
+Step 5: The app should be accessible on 0.0.0.0:3001
 
-(To open chrome in CORS mode: https://alfilatov.com/posts/run-chrome-without-cors/)
-
-The app should be accessible on 0.0.0.0:3001
 
 ### With Web-pack Dev-Server:
 
@@ -69,9 +66,7 @@ Step 5: Run
 ```bash
 yarn start
 ```
-Step: 6: Open chrome in CORS mode:
-
-(To open chrome in CORS mode: https://alfilatov.com/posts/run-chrome-without-cors/)
+Step: 6: The app should be accessible on localhost:3000
 
 The app should be accessible on localhost:3000
 

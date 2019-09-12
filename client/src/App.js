@@ -98,7 +98,7 @@ class App extends Component {
   }
 
   fetchData (data, handleResponse) {
-    const url = new URL(process.env.REACT_APP_URL);
+    const url = new URL("https://cors-anywhere.herokuapp.com/" + process.env.REACT_APP_URL);
     Object.keys(data).forEach(query => url.searchParams.append(query, data[query]))
     let xhr = new XMLHttpRequest();
     xhr.open("GET", url)
